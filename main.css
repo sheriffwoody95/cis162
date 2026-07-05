@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/* Project 1-3
+ * Filename: main.css
+ * Author: Christopher Bejarano
+ * Date: 2024/06/05
+ * Stylesheet for Project 1-3
+ */
+
+ /* HTML and body styles */
+ html {
+ 	background-color: hsl(126, 28%, 46%);
+}
+
+ body {
+ 	font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: ivory;
+ }
+
+/* Header styles */
+
+header {
+ 	background-color: hsl(162, 34%, 66%);
+ 	text-align: center;
+ }
+
+h1 {
+    font-family: Tahoma, Arial, sans-serif;
+ 	font-size: 3em;
+    color: hsl(0, 74%, 43%);
+    background-color:hsl(126, 28%, 46%);
+    
+ }
+
+ /* Navigation styles */
+
+ nav ul {
+ 	font-family: Arial, sans-serif;
+    background-color: hsl(162, 34%, 66%);
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+ }
+
+ nav > ul > li > a:visited{
+ 	color: hsl(301, 58%, 48%);
+    text-decoration: none;
+    padding: 1px;
+ }
+
+  nav > ul > li > a:link{
+ 	color: hsl(131, 100%, 50%);
+    text-decoration: underline;
+    padding: 1px;
+ }
+
+ nav > ul > li > a:hover{
+ 	color: hsl(241, 100%, 50%);
+    text-decoration: underline overline;
+    padding: 1px;
+ }
+
+
+ /* Section styles */
+
+ section h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+ 	color: hsl(141, 84%, 36%);
+    background-color: hsl(163, 6%, 25%);
+    text-decoration: underline;
+ }
+
+ /* Footer styles */
+
+footer {
+    margin-top: 20px;
+    padding: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 0.8em;
+ 	background-color: hsl(0, 62%, 85%);
+ }
+
+ /* Last modified: July 5, 2026 */
