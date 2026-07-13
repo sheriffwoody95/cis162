@@ -1,11 +1,19 @@
 @charset "utf-8";
 
-/* Project 1-3
+/* Project 1-4
  * Filename: main.css
  * Author: Christopher Bejarano
- * Date: 2024/06/05
- * Stylesheet for Project 1-3
+ * Date: 2026/07/12
+ * Stylesheet for Project 1-4
  */
+
+ /*reset styles*/
+ * {
+ 	margin: 0;
+ 	padding: 0;
+  vertical-align: baseline;
+ 	box-sizing: border-box;
+ }
 
  /* HTML and body styles */
  html {
@@ -14,73 +22,140 @@
 
  body {
  	font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
-    background-color: ivory;
+   color: hsl(163, 20%, 10%);
+   background-color: hsl(150, 20%, 97%);
+   width: 95%;
+   max-width: 960px;
+   min-width: 640px;
+   margin-left: auto;
+  margin-right: auto;
  }
 
-/* Header styles */
+ /*Left column styles*/
+ section#leftColumn {
+  clear: both;
+ 	float: left;
+ 	width: 56%;
+  box-sizing: border-box;
+  padding: 1.5em 1em;
+ }
+
+ section#leftColumn img {
+ 	max-width: 100%;
+  display: inline-block;
+ 
+ }
+
+  /*Right column styles*/
+ section#rightColumn {
+  float: right;
+ 	width: 40%;
+  box-sizing: border-box;
+  padding: 1.5em 1em;
+  margin-left:2%;
+ }
+
+ section#rightColumn img {
+ 	width: 100%;
+  display: block;
+ }
+ 
+ /* Header styles */
 
 header {
- 	background-color: hsl(162, 34%, 66%);
+ 	background-color: hsl(126, 28%, 46%);
  	text-align: center;
+ 	margin: 0 auto;
+ }
+
+header::after {
+ 	content: "";
+ 	display: table;
+ 	clear: both;
+  height: 1.5em;
  }
 
 h1 {
-    font-family: Tahoma, Arial, sans-serif;
+   font-family: Tahoma, Arial, sans-serif;
  	font-size: 3em;
-    color: hsl(0, 74%, 43%);
-    background-color:hsl(126, 28%, 46%);
-    
+   color: hsl(0, 0%, 0%);
+   background-color: hsl(126, 28%, 46%);
+   margin-top: 0;
+   margin-bottom: 0;
+   padding: 10px;
  }
 
  /* Navigation styles */
 
- nav ul {
- 	font-family: Arial, sans-serif;
-    background-color: hsl(162, 34%, 66%);
-    list-style-type: none;
-    padding: 10px;
-    margin:0;
+body > header > nav.horizontalNavigation {
+ 	width: 100%;
  }
 
- nav > ul > li > a:visited{
- 	color: hsl(301, 58%, 48%);
-    text-decoration: none;
-    padding: 1px;
+nav.horizontalNavigation ul {
+   list-style-type: none; 
+   margin: 0;
+   padding: 0;
+   background-color: hsl(162, 40%, 20%);
+   display: flow-root;
  }
 
-  nav > ul > li > a:link{
- 	color: hsl(131, 100%, 50%);
-    text-decoration: underline;
-    padding: 1px;
+nav.horizontalNavigation li {
+   display: block;
+   float: left;
+   width: 33.33%;
  }
 
- nav > ul > li > a:hover{
- 	color: hsl(241, 100%, 50%);
-    text-decoration: underline overline;
-    padding: 1px;
+nav.horizontalNavigation a {
+   display: block;
+   padding: 10px;
+   color: ivory;
+ 	text-align: center;
+   text-decoration: none;
  }
 
+nav.horizontalNavigation a:hover {
+   background-color: hsl(163, 34%, 30%);
+   color: hsl(0, 0%, 100%);
+ }
 
  /* Section styles */
 
  section h2 {
-    font-family: Arial, sans-serif;
-    font-size: 1.5em;
+   font-family: Arial, sans-serif;
+   font-size: 1.5em;
  	color: hsl(141, 84%, 36%);
-    background-color: hsl(163, 6%, 25%);
-    text-decoration: underline;
-    padding:10px;
+   background-color: hsl(163, 6%, 25%);
+   text-decoration: underline;
+   padding:10px;
+   margin-bottom: 1em;
+ }
+
+ section p {
+  line-height: 1.6;
+  margin-bottom: 1.2em;
+  padding: 0 1em;
+ }
+
+ section ul, section ol {
+  margin-bottom: 1.5em;
+  padding-left: 2.5em; 
+ }
+
+ section ul li, section ol li {
+  line-height: 1.5;
+  margin-bottom: 0.6em;
  }
 
  /* Footer styles */
 
 footer {
-    margin-top: 20px;
-    padding: 1px;
-    font-family: Arial, sans-serif;
-    font-size: 0.8em;
- 	background-color: hsl(0, 62%, 85%);
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding: 1px;
+   font-family: Arial, sans-serif;
+   font-size: 0.9em;
+ 	background-color: hsl(126, 20%, 80%);
+  clear: both;
  }
 
- /* Last modified: July 5, 2026 */
+ /* Last modified: July 12, 2026 */
